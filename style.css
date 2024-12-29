@@ -185,14 +185,116 @@ nav ul li ul li a:hover {
 /*Main*/
 
 main {
-    margin: 20px;
-    min-height: 250px;
-    min-width: 300px;
+    padding: 20px;
+    height: 60vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center; 
     
 }
+
+.container_SevMini {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Ghost {
+  transform: translate(0px, -25px);
+  z-index: -1;
+  animation: opacidad 4s infinite ease-in-out;
+}
+
+@keyframes opacidad {
+  0% {
+    opacity: 1;
+    scale: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+    scale: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes estroboscopico {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  51% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rebote {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes estroboscopico1 {
+  0%,
+  50%,
+  100% {
+    fill: rgb(255, 95, 74);
+  }
+
+  25%,
+  75% {
+    fill: rgb(16, 53, 115);
+  }
+}
+
+@keyframes estroboscopico2 {
+  0%,
+  50%,
+  100% {
+    fill: #17e300;
+  }
+
+  25%,
+  75% {
+    fill: #17e300b4;
+  }
+}
+
+.SevMini {
+  animation: rebote 4s infinite ease-in-out;
+}
+
+#strobe_led1 {
+  animation: estroboscopico 0.5s infinite;
+}
+
+#strobe_color1 {
+  animation: estroboscopico2 0.8s infinite;
+}
+
+#strobe_color3 {
+  animation: estroboscopico1 0.8s infinite;
+  animation-delay: 3s;
+}
+
 
 .img-introduction {
     display: flex;
@@ -214,7 +316,7 @@ main p {
     display: flex;
     align-items: center;
     font-size: 16px;
-    width: 300px;
+    width: 350px;
     margin: 20px;
     color: white;
 }
@@ -995,6 +1097,10 @@ footer {
         font-size: 15px;
     }
 
+    p{
+      font-size: 14px;
+    }
+
     nav > ul {
         flex-direction: column;
         background: #6a6e73;
@@ -1045,7 +1151,9 @@ footer {
     }
 
     #lable__check {
-        display: block;
+      width: 100%;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .icon__menu {
@@ -1062,6 +1170,11 @@ footer {
     main {
         flex-direction: column;
         justify-content: center; 
+    }
+
+    main p {
+        max-width: 300px;
+        margin: 10px;
     }
 
     section {
