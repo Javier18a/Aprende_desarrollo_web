@@ -57,13 +57,21 @@
 
         <i class="fa-brands fa-html5" style="color: #ff8700; font-size: 140px;"></i>
     </main>
+
+    <div class="nav__sections">
+        <a href="#WT__html">¿Qué es HTML?</a>
+        <a href="#tabla-etiquetas">Etiquetas</a>
+        <a href="#ejemplos-titulo">Ejemplos</a>
+        <a href="#atributos">Atributos</a>
+        <a href="#selector">Selector</a>
+    </div>
   
     <div class="WT__html">
         <h2>¿Qué es HTML?</h2>
         <p>HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas web. Se trata de la sigla que corresponde a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto. Define elementos como títulos, párrafos, enlaces, imágenes y otros componentes mediante etiquetas.</p>
     </div>
 
-    <table border="2">
+    <table border="2" id="tabla-etiquetas">
          <div class="tabla-etiquetas"><p>Etiquetas | Uso</p></div>
 
          <tr class="titulo-etiquetas"><td colspan="3">ETIQUETAS HTML</td></tr>
@@ -153,10 +161,11 @@
     </table>
 
 
-    <div class="ejemplos-titulo"><p> Ejemplos del uso de las etiquetas </p></div>
-    
-    <div id="contenedor">
+    <div class="ejemplos" style="width: 100%; display: flex; justify-content: center; margin-top: 70px;">
+        <h1 id="ejemplos-titulo">Ejemplos</h1>
+    </div>
 
+    <div id="contenedor"> 
         <div class="carrusel" id="carrusel-1">
             <div class="tarjetas" id="tarjeta-1">
                 <div class="inf-ejemplo">                    
@@ -277,11 +286,9 @@
 
     </div>
 
-    <div class="atributos">
-
-        <h1 class="titulo-atributo">Que es un atributo?</h1>
-
-        <p class="q-atributo">Los atributos en HTML son palabras clave que el desarrollador usa para agregar información y poder modificar con mayor facilidad sus etiquetas usando una hoja de estilos. </p>
+    <div class="atributos" id="atributos" style="margin-top: 70px;">
+        <h1>Que es un atributo?</h1>
+        <p>Los atributos en HTML son palabras clave que el desarrollador usa para agregar información y poder modificar con mayor facilidad sus etiquetas usando una hoja de estilos. </p>
 
         <table border="2">
 
@@ -305,7 +312,7 @@
 
     </div>
 
-    <section class="selector">
+    <section class="selector" id="selector">
         <h1>¿Que es un selector?</h1>
         <P>Un selector es la forma en la que un desarrollo web puede seleccionar un elemento especifico entre tantos tenga en su proyecto, también un selector le ayuda a un desarrollo a poder tener un mejor manejo de los estilos u cambios que desee hacer.</P>
     </section>

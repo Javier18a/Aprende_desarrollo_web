@@ -174,7 +174,7 @@ nav ul li ul li a:hover {
 }
 
 main {
-    height: 82vh;
+    height: 84vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -311,28 +311,18 @@ main .hero a{
     animation-delay: 3s;
 }
 
-.What {
-    height: 80vh;
-    margin-top: 10px;
-    font-size: 17px;
-    background: #396CAA;
-    color: white;
+.What{
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.What p {
+.What p{
+    margin-top: 20px;
     width: 500px;
-    margin: 10px;
-    display: flex;
-    position: relative;
-    flex-direction: column;
 }
-
-
-/*Page HTML*/
 
 .container__html{
     width: 400px;
@@ -355,8 +345,6 @@ main .hero a{
 
 .WT__html{
     height: 60vh;
-    background: #396CAA;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -506,6 +494,11 @@ th {
     flex-direction: column;
 }
 
+.atributos p{
+    margin: 30px;
+    width: 450px;
+}
+
 .titulo-atributo {
     text-align: center;
     margin: 10px;
@@ -569,90 +562,87 @@ th {
 
 /*Css*/
 
-
-
-.Presentación-css {
-    margin-top: 30px;
-    text-align: center;
-    font-size: 35px;
+.container__css {
+    width: 400px;
+    justify-content: center;
 }
 
-.main-css {
-    display: flex;
-    flex-direction: column;
+
+.container__css h2{
+    font-size: 45px;
+    margin-bottom: 20px;
 }
 
-.Q-css {
+.container__css a{
+    padding: 10px 20px;    
+    background: #396CAA;
+    color: white;
+    border-radius: 2px;
+    margin-bottom: 40px;
+
+}   
+
+.nav__sections {
+    padding: 20px;
+    background: #396CAA;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: row;
-    align-items: center;
 }
 
-.Q-css i {
-    font-size: 120px;
+
+.nav__sections a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
 }
 
-.sección {
-    margin: 10px;
-}
-
-.img-css {
-    display: flex;
-    align-items: center;
-    height: 120px;
-}
-
-.css {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    width: 300px;
-}
-
-.funcion-css {
-    min-width: 250px;
+#que-es-css {
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.funcion-css p {
-    display: flex;
+#que-es-css p {
+    margin: 20px;
     width: 450px;
+}
+
+#funcion-css{
+    height: 50vh;
+    background: #396CAA;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#funcion-css h1{
+    margin-bottom: 20px;
+}
+
+#funcion-css p{
     margin: 20px;
+    width: 450px;
 }
 
-.c-f {
+#uso-selector{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#uso-selector p{
     margin: 20px;
-    display: flex;
-    justify-content: center;
+    width: 450px;
 }
 
-.u-s {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-
-.uso-selector {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.uso-selector p {
-    display: flex;
-    justify-content: center;
-    max-width: 450px;
-}
-
-.como-us {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-    font-size: 35px;
-}
 
 .ejemplo-css {
     display: flex;
@@ -662,13 +652,16 @@ th {
 }
 
 .codigo-css {
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 5px;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .codigo-css p {
-    margin: 5px;
+    margin: 15px;
 }
 
 .tipos-e {
@@ -689,10 +682,12 @@ th {
 
 .style {
     margin-top: 10px;
+    padding: 15px;
     font-size: 35px;
     display: flex;
     justify-content: center;
-    background: #393d42;
+    background: #396CAA;
+    color: white;
 }
 
 .como-usar-codigos {
@@ -725,19 +720,19 @@ th {
     justify-content: center;
     align-items: center;
     margin-left: 15px;
-    background: #6a6e73;
+    background: #396CAA;
     border-bottom: 5px solid white;
     border-top: 5px solid white;
 }
 
 .altura {
-    width: 100px;
+    width: 120px;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 15px;
-    background: #6a6e73;
+    background: #396CAA;
     border-left: 5px solid white;
     border-right: 5px solid white;
 }
@@ -751,7 +746,7 @@ th {
 
 .letra-nombre,
 .letra-codigo {
-    background: #6a6e73;
+    background: #396CAA;
     width: 150px;
     height: 150px;
     margin: 20px;
@@ -782,7 +777,7 @@ th {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: #396CAA;
 }
 
 .tipos-selector-css {
@@ -839,7 +834,7 @@ th {
     height: 50px;
     border: 1px solid blue;
     position: relative;
-    top: 110px;
+    top: 108px;
 }
 
 .posicion-abajo {
@@ -847,7 +842,7 @@ th {
     height: 50px;
     border: 1px solid blue;
     position: relative;
-    bottom: 142px;
+    bottom: 140px;
 }
 
 .posicion-derecha {
@@ -855,7 +850,7 @@ th {
     height: 150px;
     border: 1px solid blue;
     position: relative;
-    right: 53px;
+    right: 50px;
     bottom: 141px;
 }
 
@@ -897,7 +892,7 @@ th {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #393d42;
+    background: #396CAA;
     border: 2px solid blue;
 }
 
@@ -909,7 +904,7 @@ th {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #393d42;
+    background: #396CAA;
     border: 2px solid blue;
     border-radius: 50%;
 }
@@ -1008,31 +1003,31 @@ th {
 .social-icons i {
     font-size: 40px;
     margin: 10px;
-    color: white;
+    color: black;
 }
 
 .social-icons .icon:nth-child(1) {
-    color: green;
+    color: black;
     text-shadow:
-        0 0 5px greenyellow,
-        0 0 25px greenyellow,
-        0 0 100px greenyellow;
+        0 0 15px greenyellow,
+        0 0 35px greenyellow,
+        0 0 110px greenyellow;
 }
 
 .social-icons .icon:nth-child(2) {
     color: purple;
     text-shadow:
-        0 0 5px plum,
-        0 0 25px plum,
-        0 0 100px plum;
+        0 0 15px plum,
+        0 0 35px plum,
+        0 0 110px plum;
 }
 
 .social-icons .icon:nth-child(3) {
     color: blue;
     text-shadow:
-        0 0 5px aqua,
-        0 0 25px aqua,
-        0 0 100px aqua;
+        0 0 15px aqua,
+        0 0 35px aqua,
+        0 0 110px aqua;
 }
 
 footer {
@@ -1120,6 +1115,15 @@ footer {
         justify-content: center;
     }
 
+    .What h1{
+        text-align: center;
+    }
+
+    .container__html, 
+    .container__css {
+        margin-bottom: 25px;
+    }
+
     .container__hero {
         width: 100%;
         text-align: center;
@@ -1154,7 +1158,6 @@ footer {
     .etiquetas {
         max-width: 100%;
         color: white;
-        background: #393d42;
         margin-bottom: 20px;
     }
 
@@ -1176,9 +1179,7 @@ footer {
 
     /*Ejemplos*/
 
-    .ejemplos-titulo {
-        text-align: center;
-    }
+   
 
     .contenedor {
         flex-direction: column;
@@ -1212,7 +1213,9 @@ footer {
         align-items: center;
     }
 
-    /*atributo*/
+    .atributos p{
+        max-width: 310px;
+    }
 
     .q-atributo {
         max-width: 310px;
@@ -1256,18 +1259,38 @@ footer {
 
     /*CSS*/
 
-    .Q-css {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .container__css {
+        width: 100%;
+        text-align: center;
+        border-bottom: 50px;
     }
 
-    .css {
-        margin: 0;
-        max-width: 350px;
+    .nav__sections {
+        flex-direction: column;
+    }
+
+    #que-es-css p {
+        max-width: 300px;
+    }
+
+    #funcion-css p {
+        max-width: 300px;
+    }
+
+    #uso-selector p {
+        max-width: 300px;
+    }
+
+    .ejemplo-css {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+    }
+
+    .ejemplo-css h1{
+        margin-bottom: 15px;
+        text-align: center;
     }
 
     .uso-selector p {
